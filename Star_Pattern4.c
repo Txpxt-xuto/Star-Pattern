@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()//พีระมิด//
+int main()//พีระมิด/
 {
   int i,j,k;
   scanf("%d",&k);
