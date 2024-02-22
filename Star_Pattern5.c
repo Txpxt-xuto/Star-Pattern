@@ -1,5 +1,5 @@
 #include <stdio.h>
-int main()//พีระมิดตัวอักษร
+int main()//พีระมิดตัวอักษร//
 {
     int i,j,k,sum=0;;
     char line[25];
