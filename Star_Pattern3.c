@@ -1,43 +1,37 @@
 #include <stdio.h>
-int main()//ผีเสื้อโบยบิน//
+int main()//ต้นคริสต์มาส//
 {
-    int i,j,k;
-    scanf("%d",&k);
-    for(i=1;i<=k;i++)
+    int i,j,k,n;
+    scanf("%d",&n);
+    for(k=2;k<=n+1;k++)
     {
-        for(j=1;j<=i;j++)
+        for(i=1;i<=k;i++)
         {
-            printf("*");
+            for(j=n+1;j>i;j--)
+            {
+                printf(" ");
+            }
+            for(j=1;j<=i*2-1;j++)
+            {
+                printf("*");
+            }
+            printf("\n");
         }
-        for(j=(k*2)-1;j>=2*i-1;j--)
-        {
-            printf(" ");
-        }
-        for(j=1;j<=i;j++)
-        {
-            printf("*");
-        }
-        printf("\n");
     }
-    for(i=1;i<=2*k+1;i++)
+        
+    //ฐานราก
+    for(i=1;i<=n;i++)
     {
-        printf("*");
+        printf(" ");
     }
-    printf("\n");
-    for(i=k;i>=1;i--)
+    printf("|\n");
+    for(i=1;i<=n;i++)
     {
-        for(j=i;j>=1;j--)
-        {
-            printf("*");
-        }
-        for(j=2*i-1;j<=(k*2)-1;j++)
-        {
-            printf(" ");
-        }
-        for(j=i;j>=1;j--)
-        {
-            printf("*");
-        }
-        printf("\n");
+        printf("=");
+    }
+    printf("V");
+    for(i=1;i<=n;i++)
+    {
+        printf("=");
     }
 }
