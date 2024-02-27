@@ -14,7 +14,7 @@ int main()//Heart//
         {
             printf("*");
         }
-        for(j=n-i;j>1;j--)
+        for(j=n-i;j>0;j--)
         {
             printf(" ");
         }
@@ -26,7 +26,7 @@ int main()//Heart//
     }
     for(i=n;i>=1;i--)
     {
-        for(j=n-i;j>=0;j--)
+        for(j=n-i;j>=-1;j--)
         {   
             printf(" ");
         }
