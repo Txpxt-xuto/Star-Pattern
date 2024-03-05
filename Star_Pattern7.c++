@@ -1,33 +1,56 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
-int main()
+int main()//ข้าวหลามตัดซ้อนทับ//
 {
     int i,j,k,n;
-    string words[100];
-    scanf("%s",&words);
-    for(i=0;i<=words[100].length();i++)
+    cin >> n;
+    for(i=1;i<n;i++)
     {
-        if(words[i]=='A')
+        for(j=n-i;j>0;j--)
         {
-            for(j=0;j<0;j++)
-            {
-                printf("     *");
-                for(k=5-j;k>0;k--)
-                {
-                    printf(" ");
-                }
-                printf("*");
-                for(k=j;k<5;k++)
-                {
-                    printf(" ");
-                }
-                printf("*\n");
-            }
+            cout << " ";
         }
-        else if(words[i]=='B')
+        for(j=0;j<(2*i)-1;j++)
         {
-            
+            cout << "*";
         }
+        cout << "\n";
+    }
+    for(i=n;i>1;i--)
+    {
+        for(j=0;j<n-i;j++)
+        {
+            cout << " ";
+        }
+        for(j=(2*i)-1;j>0;j--)
+        {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    for(i=2;i<n;i++)
+    {
+        for(j=n-i;j>0;j--)
+        {
+            cout << " ";
+        }
+        for(j=0;j<(2*i)-1;j++)
+        {
+            cout << "*";
+        }
+        cout << "\n";
+    }
+    for(i=n;i>=1;i--)
+    {
+        for(j=0;j<n-i;j++)
+        {
+            cout << " ";
+        }
+        for(j=(2*i)-1;j>0;j--)
+        {
+            cout << "*";
+        }
+        cout << "\n";
     }
 }
