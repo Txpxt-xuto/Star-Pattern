@@ -39,10 +39,7 @@ int main()//เครื่องหมายสวัสดิกะ//
             cout << " ";
         }
         cout << "*";
-        for(j=0;j<(n/2)-1;j++)cout << " ";
-        {
-            
-        }
+        for(j=0;j<(n/2)-1;j++) cout << " ";
         cout << "*";
         cout << endl;
     }
