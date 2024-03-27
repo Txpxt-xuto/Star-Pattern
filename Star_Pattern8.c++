@@ -20,24 +20,21 @@ int main()//เครื่องหมายสวัสดิกะ//
     for(i=0;i<(n/2)-1;i++)
     {
         cout << "*";
-        for(j=0;j<(n/2)-1;j++)
+        for(j=0;j<(n/2)-1;j++) cout << " ";
         {
-            cout << " ";
+            
         }
         cout << "*";
         cout << endl;
     }
-    for(j=0;j<n;j++)
+    for(j=0;j<n;j++) cout << "*";
     {
-        cout << "*";
+        
     }
     cout << endl;
     for(i=0;i<(n/2)-1;i++)
     {
-        for(j=0;j<(n/2);j++)
-        {
-            cout << " ";
-        }
+        for(j=0;j<(n/2);j++) cout << " ";
         cout << "*";
         for(j=0;j<(n/2)-1;j++) cout << " ";
         cout << "*";
